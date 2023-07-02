@@ -78,6 +78,11 @@ on property:vendor.post_boot.parsed=1
     write /dev/cpuset/background/cpus 0-1
     write /dev/cpuset/foreground/cpus 0-6
 
+    # CPUFreq
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
+    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us 10000
+    write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us 5000
+
 on property:sys.usb.config=adb && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/idVendor 0x22D9
     write /config/usb_gadget/g1/idProduct 0x2769
