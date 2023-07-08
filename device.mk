@@ -23,6 +23,10 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
@@ -30,6 +34,11 @@ PRODUCT_PACKAGES += \
 
 # APEX
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# Alert slider
+PRODUCT_PACKAGES += \
+    KeyHandler \
+    tri-state-key-calibrate
 
 # Atrace
 PRODUCT_PACKAGES += \
@@ -80,6 +89,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/bluetooth_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_hearing_aid_audio_policy_configuration.xml
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_platform_info.xml \
+    $(LOCAL_PATH)/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml \
+    $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/mixer_paths.xml \
+    $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/mixer_paths.xml \
+    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/sound_trigger_mixer_paths.xml \
+    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml \
+    $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_ODM)/etc/sound_trigger_platform_info.xml \
+    $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_platform_info.xml    
+
+PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
@@ -108,6 +127,10 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti \
     android.hardware.boot@1.2-impl-qti.recovery \
     android.hardware.boot@1.2-service
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -279,6 +302,23 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc_snxxx@1.2-service \
+    android.hardware.secure_element@1.2.vendor \
+    com.android.nfc_extras \
+    Tag
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.ese.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
+    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
+    frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.ese.xml \
+    frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml \
+    frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
+    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
+
 # OMX
 PRODUCT_PACKAGES += \
     libOmxAacEnc \
@@ -300,6 +340,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResTarget \
     OPlusFrameworksResCommon \
+    OPlusSettingsProviderResTarget \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
     WifiResTarget
@@ -469,4 +510,4 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/oneplus/sm8350-common/sm8350-common-vendor.mk)
+$(call inherit-product, vendor/oneplus/martini/martini-vendor.mk)
