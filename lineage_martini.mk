@@ -14,6 +14,9 @@ $(call inherit-product, device/oneplus/martini/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Inherit gapps
+$(call inherit-product, vendor/gapps/common/common-vendor.mk)
+
 PRODUCT_NAME := lineage_martini
 PRODUCT_DEVICE := martini
 PRODUCT_MANUFACTURER := OnePlus
