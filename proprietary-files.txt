@@ -496,7 +496,7 @@ vendor/etc/charger_fstab.qti
 vendor/etc/charger_fw_fstab.qti
 
 # CNE - from LA.UM.9.14.r1-21000-LAHAINA.QSSI13.0
--vendor/app/CACertService/CACertService.apk|f23eb42d6205efc78629882251134f913ea5732d
+-vendor/app/CACertService/CACertService.apk|b1072f129d588b5c5aefa8824b6d531586a26755
 -vendor/app/CneApp/CneApp.apk|345dc6c677e9bd7a7d36033b8955e90d2a1594d5
 -vendor/app/IWlanService/IWlanService.apk|9ea57bfbf58799a564fcf498de9f5fe3506f7342
 vendor/bin/cnd|4e6ae2528afcff42fb3d295ad69d5bb671b53fed
@@ -538,7 +538,7 @@ vendor/lib64/libcne.so|34e6463b4e8be00b5149010e1e47e30fa3b99a18
 vendor/lib64/libcneapiclient.so|60a088c6d22caad5f5fd1fcd74654bd94624aedb
 vendor/lib64/libcneoplookup.so|93bd6b25e8aa255fd88b05d44167d97ca3425029
 vendor/lib64/libcneqmiutils.so|ae333f4f52085ea333dcdaf8f15395cc875a2c30
-vendor/lib64/libjnihelper.so|8c82b2fe3355a1b9f76fc9b414ed9a8965e9c970
+vendor/lib64/libjnihelper.so|e565f2ebab90bfa21ca33c7ac3d55f164de4c84f
 vendor/lib64/libwms.so|cad8588d589bfa84de5e4f941d49ce078a4f7430
 vendor/lib64/libwqe.so|51960123a28829a9e56acbb2504072cc3bbec8ee
 vendor/lib64/libxml.so|e6a7bfddbb57c603c49228808a1cc6545ac9075b
