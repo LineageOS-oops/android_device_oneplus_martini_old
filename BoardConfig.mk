@@ -58,6 +58,7 @@ TARGET_BOOTLOADER_BOARD_NAME := lahaina
 
 # Display
 TARGET_SCREEN_DENSITY := 450
+SOONG_CONFIG_qtidisplay_udfps := true
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
