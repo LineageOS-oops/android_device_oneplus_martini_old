@@ -57,7 +57,7 @@ BOARD_USES_ALSA_AUDIO := true
 TARGET_BOOTLOADER_BOARD_NAME := lahaina
 
 # Display
-TARGET_SCREEN_DENSITY := 450
+TARGET_SCREEN_DENSITY := 437
 SOONG_CONFIG_qtidisplay_udfps := true
 
 # Properties
