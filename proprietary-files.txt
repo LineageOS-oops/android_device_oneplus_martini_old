@@ -90,7 +90,6 @@ vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libbitml_nsp_skel.so
 vendor/lib/rfsa/adsp/libbitml_nsp_v2_skel.so
 vendor/lib/rfsa/adsp/libcamera_nn_skel.so
-vendor/lib/rfsa/adsp/libcvpdsp_2_1.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
@@ -570,13 +569,15 @@ vendor/bin/ssgqmigd|fe6b2150e77221a404981126a14a334aa676ac61
 vendor/bin/ssgtzd|3409876f07fa987a833a146f94beb13ff5fffbfb
 vendor/etc/init/ssgtzd.rc|140086da548acd74420c8f494c3351b4dedc1c80
 
-# CVP
-vendor/etc/cvp/v2.0/facedetection/model1.dat
-vendor/etc/cvp/v2.1/facedetection/model2.dat
-vendor/lib64/libcvp2_1.so
-vendor/lib64/libcvp_common.so
-vendor/lib64/libcvpcpuRev_skel.so
-vendor/lib64/vendor.qti.hardware.cvp@1.0.so
+# CVP - from LA.UM.9.14.r1-21000-LAHAINA.QSSI13.0
+vendor/etc/cvp/v2.0/facedetection/model1.dat|b297119bcd28225b6b2f016dd00db6338ae21f13
+vendor/etc/cvp/v2.1/facedetection/model2.dat|2bea6521ea117c70f938f542f48f9983259fca8d
+vendor/lib/rfsa/adsp/libcvpdsp_2_1.so|e776e9bc4a2f70c41d19a81c004b5ba861ceb623
+vendor/lib64/libcvp2_1.so|38a44f537929e35d64ab7c950022110e6b534ded
+vendor/lib64/libcvp_common.so|98b05152cf489f213304918c69cae0bb5031c572
+vendor/lib64/libcvp_util.so|e1f643a0ba42024eb0db686ec0f248c64f20c212
+vendor/lib64/libcvpcpuRev_skel.so|d7bd0873a5087b56a9d7324219a906b3c3edf795
+vendor/lib64/vendor.qti.hardware.cvp@1.0.so|696b89083c4f068dad9724b78a92a84b6ae01af4
 
 # CVP firmware
 vendor/firmware/evass.b00
@@ -1488,11 +1489,12 @@ vendor/lib64/libscveObjectSegmentation_stub.so
 vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
 
-# Soter
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
-vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.soter@1.0.so
+# Soter - from LA.UM.9.14.r1-21000-LAHAINA.QSSI13.0
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|89ff6b0bb10110c5ab91ab089d540095368ff645
+vendor/bin/vendor.qti.hardware.soter@1.0-provision|219e9fc3dade201439ffa19c6452a521ad0f486e
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|ca9d2f2cf5b1dd49bdcee560e790c53e317b102a
+vendor/lib64/vendor.qti.hardware.soter@1.0.so|5026d8e5bdcacce49241f4fde0f4143e4c60e42c
 
 # TFTP - from LA.UM.9.14.r1-21000-LAHAINA.QSSI13.0
 vendor/bin/tftp_server|e450f12b7410955bb910db00fdcd4daafc6bb1b5
@@ -1791,11 +1793,11 @@ vendor/etc/thermal-engine.conf
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 
-# Time services
-vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
-vendor/etc/init/init.time_daemon.rc
-vendor/lib64/libtime_genoff.so
+# Time services - from LA.UM.9.14.r1-21000-LAHAINA.QSSI13.0
+-vendor/app/TimeService/TimeService.apk|92317b3b72586489456d37057b4c3c8e55863923
+vendor/bin/time_daemon|4c2a0ff6d2322c9fda64321b12bba62aa30bc385
+vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
+vendor/lib64/libtime_genoff.so|2ed540a100dae631070b6e06c01c56c0cfce6484
 
 # Touchscreen firmware
 odm/firmware/tp/20820/FW_S3908_SAMSUNG.img
