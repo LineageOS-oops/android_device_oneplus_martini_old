@@ -180,6 +180,9 @@ VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include hardware/oplus/sepolicy/qti/SEPolicy.mk
 
+# UDFPS
+SOONG_CONFIG_qtidisplay_udfps := true
+
 # Vibrator
 SOONG_CONFIG_NAMESPACES += OPLUS_LINEAGE_VIBRATOR_HAL
 SOONG_CONFIG_OPLUS_LINEAGE_VIBRATOR_HAL := USE_EFFECT_STREAM
