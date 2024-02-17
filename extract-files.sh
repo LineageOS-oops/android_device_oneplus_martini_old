@@ -86,7 +86,7 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
             ;;
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
-            "${SIGSCAN}" -p "23 0B 00 94" -P "1F 20 03 D5" -f "${2}"
+            "${SIGSCAN}" -p "27 0B 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
         odm/lib/liblvimfs_wrapper.so|odm/lib64/libCOppLceTonemapAPI.so|odm/lib64/libaps_frame_registration.so|vendor/lib64/libalsc.so)
             "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
