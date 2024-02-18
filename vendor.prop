@@ -168,6 +168,9 @@ persist.vendor.sensors.on_change_sample_period=true
 persist.vendor.sensors.sync_request=true
 persist.vendor.sensors.debug.hal=0
 
+# Radio
+persist.radio.multisim.config=dsds
+
 # USB
 sys.usb.mtp.batchcancel=1
 vendor.usb.diag.func.name=ffs
