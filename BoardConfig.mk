@@ -93,6 +93,7 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3 \
     cgroup.memory=nokmem,nosocket \
+    cgroup_disable=pressure \
     loop.max_part=7 \
     lpm_levels.sleep_disabled=1 \
     msm_rtb.filter=0x237 \
