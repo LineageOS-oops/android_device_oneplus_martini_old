@@ -86,7 +86,7 @@ function blob_fixup() {
             sed -i "s/NFC_DEBUG_ENABLED=1/NFC_DEBUG_ENABLED=0/" "${2}"
             ;;
         vendor/etc/msm_irqbalance.conf)
-            sed -i "s/IGNORED_IRQ=27,23,38$/&,115,332/" "${2}"
+            sed -i "s/IGNORED_IRQ=27,23,38$/&,269,272/" "${2}"
             ;;
         vendor/lib/libgui1_vendor.so)
             "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"

@@ -68,12 +68,6 @@ on property:sys.boot_completed=1
     chown system system /mnt/vendor/persist/data/pfm/licenses/oplus_Widevine_licenses.pfm
 
 on property:vendor.post_boot.parsed=1
-    # IRQ Tuning
-    # IRQ 243: msm_drm
-    # IRQ 240: kgsl_3d0_irq
-    write /proc/irq/243/smp_affinity_list 2
-    write /proc/irq/240/smp_affinity_list 1
-
     # CPUset
     write /dev/cpuset/background/cpus 0-1
     write /dev/cpuset/foreground/cpus 0-6
