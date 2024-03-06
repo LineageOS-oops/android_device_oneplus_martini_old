@@ -77,6 +77,9 @@ on property:vendor.post_boot.parsed=1
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
     setprop dalvik.vm.dex2oat-threads 6
 
+    # SSG
+    write /dev/blkio/background/blkio.ssg.max_available_ratio 25
+
 on property:sys.usb.config=adb && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/idVendor 0x22D9
     write /config/usb_gadget/g1/idProduct 0x2769
