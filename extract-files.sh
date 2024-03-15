@@ -75,7 +75,7 @@ function blob_fixup() {
         vendor/bin/init.kernel.post_boot-lahaina.sh)
             sed -i "s/uag/schedutil/" "${2}"
             ;;
-        vendor/etc/media_*/video_system_specs.json)
+        vendor/etc/media_lahaina/video_system_specs.json)
             sed -i "/max_retry_alloc_output_timeout/ s/1000/0/" "${2}"
             sed -i "/pipelining/ s/^/\/\//" "${2}"
             sed -i "/liboplusvppfilter.so/ s/^/\/\//" "${2}"
