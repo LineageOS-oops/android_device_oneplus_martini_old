@@ -15,7 +15,7 @@
  * limitations under the License
  */
 
-package co.aospa.settings.dolby;
+package com.oplus.dolby;
 
 import static com.android.settingslib.drawer.TileUtils.META_DATA_PREFERENCE_SUMMARY;
 
@@ -25,10 +25,11 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 
-import co.aospa.settings.dolby.DolbyUtils;
+import com.oplus.dolby.R;
+import com.oplus.dolby.DolbyUtils;
 
 /** Provide preference summary for injected items. */
-public class SummaryProvider extends ContentProvider {
+public class DolbySummaryProvider extends ContentProvider {
 
     private static final String KEY_DOLBY = "dolby";
 
@@ -82,13 +83,13 @@ public class SummaryProvider extends ContentProvider {
         final DolbyUtils dolbyUtils = DolbyUtils.getInstance(getContext());
         final boolean dsOn = dolbyUtils.getDsOn();
         if (!dsOn) {
-            return getContext().getString(com.android.settingslib.widget.restricted.R.string.dolby_off);
+            return getContext().getString(R.string.dolby_off);
         }
         final String profileName = dolbyUtils.getProfileName();
         if (profileName == null) {
-            return getContext().getString(com.android.settingslib.widget.restricted.R.string.dolby_on);
+            return getContext().getString(R.string.dolby_on);
         } else {
-            return getContext().getString(com.android.settingslib.widget.restricted.R.string.dolby_on_with_profile, profileName);
+            return getContext().getString(R.string.dolby_on_with_profile, profileName);
         }
     }
 }
