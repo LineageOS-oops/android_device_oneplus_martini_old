@@ -1594,7 +1594,7 @@ vendor/lib64/libspcom.so
 # Perf
 odm/lib64/liboplus-uah-client.so
 odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so|f7a5072f55fded71ef2d2ac8cd6a305a8834e93d
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
