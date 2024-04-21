@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 9RT (MT2111_14.0.0.500(EX01)).
+## are from OnePlus 9RT (MT2111_14.0.0.600(EX01)).
 
 # ACDBs
 odm/etc/acdbdata/Audio_Parameter_Version.txt
@@ -1207,26 +1207,26 @@ odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
 odm/lib64/vendor.qti.esepowermanager@1.0.so
 odm/lib64/vendor.qti.esepowermanager@1.1.so
 
-# Fingerprint
-odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
-odm/bin/init.oplus.fingerprints.sh
-odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
-odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml
-odm/lib64/hw/fingerprint.goodix_G3.default.so
-odm/lib64/anc.hal.so
-odm/lib64/libgf_hal_G3.so
-odm/lib64/libolc_vnd.so
-odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so
-odm/vendor/firmware/goodixfp.b00
-odm/vendor/firmware/goodixfp.b01
-odm/vendor/firmware/goodixfp.b02
-odm/vendor/firmware/goodixfp.b03
-odm/vendor/firmware/goodixfp.b04
-odm/vendor/firmware/goodixfp.b05
-odm/vendor/firmware/goodixfp.b06
-odm/vendor/firmware/goodixfp.b07
-odm/vendor/firmware/goodixfp.mdt
+# Fingerprint - from MT2111_14.0.0.500(EX01)
+odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service|999099ba5342f5085d7ce15c516adb7f47f8e01a
+odm/bin/init.oplus.fingerprints.sh|950befd6f64d4055bf47ab066a0a1e0080e6191e
+odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc|5eead2eabcc060ce5d400a779f1e8482732b7012
+odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml|78ca4f56ed1f5dd48c186718718fd9513629851e
+odm/lib64/hw/fingerprint.goodix_G3.default.so|4df769a4282164a789cd5c3003920fa2fe39b208
+odm/lib64/anc.hal.so|da0df2aae07928475bb011a216edd08be6ff0ef5
+odm/lib64/libgf_hal_G3.so|075e6cf59e3b9640bc6a9f0ae9c6983ce181f1c8
+odm/lib64/libolc_vnd.so|7ec00a916bb04dcc1b2b0d13344620a812104598
+odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so|f63b35e2478bad4fae7cacf5e8ef06c69e69ea80
+odm/lib64/vendor.oplus.hardware.olc2-V1-ndk_platform.so|b210036f6e30ea8d78a920c4ff7872c20c0c304a
+odm/vendor/firmware/goodixfp.b00|08806d8365523954d7e7bd6f06518b50c1d6b63d
+odm/vendor/firmware/goodixfp.b01|ca134546600f642672b4c014e6c927dccd0a3429
+odm/vendor/firmware/goodixfp.b02|f0d34ef68a927d00ad44f6d9b1c579131e9566cc
+odm/vendor/firmware/goodixfp.b03|c3483cc3826ff9dad66e0dc6dda4191e6474a7a3
+odm/vendor/firmware/goodixfp.b04|1dfef85d84cc3c3df384972c3c992ef4d7c8595c
+odm/vendor/firmware/goodixfp.b05|30f44785888135774e366787426dfef6a4b789a0
+odm/vendor/firmware/goodixfp.b06|095542b0fe17f266f0131e118d8991ee244d14e1
+odm/vendor/firmware/goodixfp.b07|9c4125ae3a32a36006bee36856bbd0de47a919f8
+odm/vendor/firmware/goodixfp.mdt|efaabe1c9bae6b15b967dc07877e3af2fefd4815
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
