@@ -1369,9 +1369,9 @@ my_product/framework/com.android.hotwordenrollment.common.util.jar:product/frame
 my_product/priv-app/HotwordEnrollmentOKGoogle.apk:product/priv-app/HotwordEnrollmentOKGoogle/HotwordEnrollmentOKGoogle.apk
 my_product/priv-app/HotwordEnrollmentXGoogle.apk:product/priv-app/HotwordEnrollmentXGoogle/HotwordEnrollmentXGoogle.apk
 
-# IMS - from LA.QSSI.14.0.r1-13500-qssi.0
+# IMS - from LA.QSSI.14.0.r1-15100-qssi.0
 system_ext/app/ImsRcsService/ImsRcsService.apk|57e4275cf15544a350617605d4a556534ada041c
-system_ext/app/QtiTelephony/QtiTelephony.apk|87bf34412816c4e1c4a56b050b1e304f98fef19d
+system_ext/app/QtiTelephony/QtiTelephony.apk|2404b75f9ac78a7f7dd97ea1a0ab3623fba59788
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|6649715fb5d956ca7e92a747dc6e73a24f3c025e
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
@@ -1388,17 +1388,17 @@ system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar|813ba6d5ba578ab148dfe3c
 system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar|00ab4d763bd95cc428e3cdfe725a63c4b8d721d3
 system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar|f68862295f5ae16f10ee8ab3650f42c8b150db4a
 system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar|45546607399adada54c166b0fb63ad648c6eda1e
-system_ext/lib64/lib-imsvideocodec.so|b1244bb8cf9b43d6136042cf73dec5c7443c695a
+system_ext/lib64/lib-imsvideocodec.so|fe3f4e54ef28d6739dae639faed9e56672bce707
 system_ext/lib64/lib-imsvt.so|0517dff9db29cbf4a2a62706e1ce3b322cf1d681
 system_ext/lib64/lib-imsvtextutils.so|19b0a5b9119388e735729e9a86ee7ee0a1355077
 system_ext/lib64/lib-imsvtutils.so|8a8d4f3c6b57fc3a31f0982a9cd43b990514e1a7
-system_ext/lib64/libdiag_system.so|a906457ce24cd76db5bc7b868f093a2623bf82d0
+system_ext/lib64/libdiag_system.so|b479225f6d2a3e39dde96a22563a149dcb7f90d8
 system_ext/lib64/libimscamera_jni.so|ca67ceb33d74db1f2d84d06a827c1c7d06bd3256
 system_ext/lib64/libimsmedia_jni.so|19889926ad7e21124b32bcd56139a9343be5e768
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so|bb32703c026364da33ca1b4f83c839e1e312ae9b
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|919c4398097c8b818a415efccc57e989c7c24e10
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|d1b6a6eabf17e43e98dcc4372fdabea4890f7cd8
-system_ext/priv-app/ims/ims.apk|eb896ad88f5c4d7ae26f6474e7fe4ccff8cc1efd
+system_ext/priv-app/ims/ims.apk|1c9d058662948b698f175a8c81bb4727ff372126
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|0683bd5ee5b9d34da4a55fefa515d676c7f8f9a4
 
 # IMS
